@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="form">
+        <p>Сумма недостачи:</p>
+        <input type="number" id="a" value="0" />
+        <p>Количество смен всех работников:</p>
+        <input type="number" id="b" value="132" readonly />
+        <p>Количество смен у сотрудника:</p>
+        <input
+          type="number"
+          id="c"
+          value="0"
+          oninput="x.value =
+          (parseInt(a.value) / parseInt(b.value)) *
+          parseInt(c.value)"
+        />
+        <p>Сумма недостачи на сотрудника:</p>
+        <output name="x" for="a b c"></output> грн
+      </form>
+
+      <table class="table">
+        <tr>
+          <th>Сотрудник</th>
+          <th>Кол-во смен</th>
+        </tr>
+        <tr>
+          <td>Стариченко</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Глущенко</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>Власенко</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Лаврук</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td>Мельниченко</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td>Лысоконь</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td>Некрашевич</td>
+          <td>4</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

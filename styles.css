@@ -1,0 +1,28 @@
+body {
+  background-color: teal;
+  font-family: "Raleway";
+}
+
+tr:nth-child(odd) {
+  background-color: #ff5c33;
+}
+
+tr:nth-child(even) {
+  background-color: #d8e495;
+}
+
+table {
+  background-color: #3347ff;
+  text-align: center;
+}
+
+th {
+  font-size: large;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 100px;
+}
